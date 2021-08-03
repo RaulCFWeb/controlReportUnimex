@@ -1,0 +1,11 @@
+para procesar la solicitud necesitamos:
+asunto, matricula, descripcion y el estatus (aprobado, rechazado responder)
+
+para agregar solicitud necestimaos:
+tipo de reporte, asunto,
+area asignada, priotidad, 
+description y
+ boton enviar
+
+para el index necesitamos:
+matriculay nombre

@@ -1,0 +1,157 @@
+/*ESTILOS PRINCIPALES*/
+:root{
+    --colorPrimary: #004b93;
+    --colorSecundary: #037ff3f1;
+    --wait: #ffa420;
+    --accepted: #008f39;
+    --rejected: #cb3234;
+}
+/*INDEX*/
+body{
+    background-color: #ccc;
+}
+.formulario{
+    width: 30%;
+    margin: 2% auto;
+    border: 1px solid white;
+    background-color: var(--colorPrimary);
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    color: white;
+    text-align: center;    
+}
+.formulario img{
+    width: 70%;
+    margin: 0 auto;
+}
+.formulario *, 
+.containerReportes *{
+    padding: 0.7em;
+    margin: 0.2em;
+}
+.formulario #btnIngresar,
+.containerAdd #btnAddReporte{
+    background-color: var(--colorSecundary);
+    border-radius: 1em;
+    color: white;
+    border: 1px solid white;
+    padding: 0.8em; 
+}
+.formulario #btnIngresar:hover,
+.containerAdd #btnAddReporte:hover{
+    background-color: var(--colorSecundary);
+}
+.messageIndex{
+    background-color: rgba(255,0,0, 0.3);
+    border-radius: 1em;
+    border: 1px solid #ccc;
+    color: white;
+    display:none;
+}  
+
+
+/*REPORTES*/
+.containerReportes{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+.containerReportes .containerAdd,
+.containerReportes .containerStatus{
+    width: 45%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid white;
+    background-color: var(--colorPrimary);
+    border-radius: 1em;
+}
+.containerAddParameter{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.parameter{
+    width: 44%;
+    border: 1px solid black;
+}
+.parameter *{
+    width: 90%;
+}
+.containerAdd{
+    display: flex;
+    flex-flow: column wrap;
+}
+.containerStatus table {
+    margin: 0 auto;
+    width: 90%;
+}
+.wait{
+    background-color: var(--wait);
+}
+.accepted{
+    background-color: var(--accepted);
+}
+.rejected{
+    background-color: var(--rejected);
+}
+
+/*CONTROL*/
+.containerControl{
+    border: 1px solid white;
+    background-color: var(--colorPrimary);
+    border-radius: 1em;
+    color: white;
+    padding: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.containerControl table{
+    width: 100%;
+}
+.containerControl table *{
+    padding: 0.3em;
+}
+.containerControl table button{
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 0.5em;
+    color: white;
+}
+.containerControl table button:hover{
+    cursor: pointer;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1096px){
+    .formulario{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1326px){
+    .containerReportes .containerAdd,
+    .containerReportes .containerStatus{
+        width: 45%;
+        margin: 0.2em;
+    }
+    .parameter{
+        width: 95%;
+    }
+}
+@media (max-width: 1196px){
+    .containerReportes{
+        flex-flow: column wrap;
+    }
+    .containerReportes .containerAdd,
+    .containerReportes .containerStatus{
+        width: 80%;
+        margin: 0.8em auto;
+    }
+}

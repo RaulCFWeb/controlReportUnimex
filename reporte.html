@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes | Ingenieria de Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="containerReportes">
+        <div class="containerAdd">
+            <h1>Agregar una nueva solicitud</h1>
+            <div class="containerAddParameter">
+                <div class="parameter">
+                    <h4>Tipo de reporte</h4>
+                    <select name="tipoDeReporte" id="tipoDeReporte">
+                        <option value="INDICENCIA">INCIDENCIA</option>
+                        <option value="SOLICITUD">SOLICITUD</option>
+                    </select>
+                </div>
+                <div class="parameter">
+                    <h4>Asunto</h4>
+                    <select name="tipoDeAsunto" id="tipoDeAsunto">
+                        <option value="NO PASO MI PAGO">NO PASO MI PAGO</option>
+                        <option value="SOLICITUD DE TITULACION">SOLICITUD DE TITULACION</option>
+                        <option value="NO PUEDO ENTRAR A LA PLATAFORMA">NO PUEDO ENTRAR A LA PLATAFORMA</option>
+                    </select>
+                </div>
+                <div class="parameter">
+                    <h4>Area asignada</h4>
+                    <input type="text" name="areaAsignada" id="areaAsignada" value="AUN NO ASIGNADA" disabled>
+                </div>
+                <div class="parameter">
+                    <h4>Prioridad</h4>
+                    <select name="prioridad" id="prioridad">
+                        <option value="ALTA">ALTA</option>
+                        <option value="BAJA">BAJA</option>
+                    </select>
+                </div>
+            </div>
+
+            <h4>Describe tu problema</h4>
+            <textarea name="mensajeReporte" id="mensajeReporte" cols="30" rows="10"
+                placeholder="Ejemplo: tuve problemas para procesar mi pago en el banco"></textarea>
+
+            <button id="btnAddReporte">Agregar reporte</button>
+        </div>
+
+        <div class="containerStatus">
+            <h1>Estatus de tus reportes</h1>
+            <table border="1" class="tablaStatus">
+                <tbody>
+                    <tr>
+                        <th>Id Reporte</th>
+                        <th>Tipo de reporte</th>
+                        <th>Asunto</th>
+                        <th>Prioridad</th>
+                        <th>Estatus</th>
+                    </tr>
+                </tbody>
+            </table>   
+            <div id="hola"></div>
+        </div>
+    </div>
+
+</body>
+<script src="reporte.js"></script>
+
+</html>
